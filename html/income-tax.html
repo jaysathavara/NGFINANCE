@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCOME-TAX - NGFINANCE</title>
+    <link rel="stylesheet" href="/assets/css/income-tax.css">
+    <link rel="shortcut icon" href="/images/main-logo.jpg" type="image/jpg" sizes="180x180">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/images/main-logo.jpg" alt="">
+        </div>
+        <ul class="menu">
+            <li><a href="/index.html">HOME</a></li>
+           <div class="dropdown">
+            <button class="dropbtn">Services</button>
+            <div class="dropdown-content">
+                <a href="/html/finance.html">Financial Planning</a>
+                <a href="/html/insurance.html">Insurance Planning</a>
+                <a href="/html/tax.html">Tax Planning</a>
+                <a href="/html/retirement.html">Retirement Planning</a>
+                <a href="/html/estate.html">Estate Planning</a>
+                <a href="/html/loan.html">Loans</a>
+
+            </div>
+           </div>
+            <li><a href="/html/about-us.html">ABOUT US</a></li>
+            <li><a href="/html/products.html">UTILITIES</a></li>
+           
+            <li><a href="/html/contact.html">CONTACT US</a></li>
+        </ul>
+        <!-- <div class="login">
+            <a href="/login.html">
+                
+                <button >LogIn</button>
+            </a>
+        </div> -->
+    </nav>
+
+    <a href="https://wa.me/9773172110" target="_blank">
+        <img src="/images/whatsapp.png" class="whatsapp" alt="" >
+    </a>
+    
+        <form action="https://formsubmit.co/ngfinance212@gmail.com" method="POST" enctype="multipart/form-data">
+            <div class="card card-1" data-step>
+                <h1>FILL YOUR INCOME-TAX RETURN INFORMATION</h1>
+                <P>Let us do the paperwork.</P>
+                <label for="year">FINANCIAL YEAR</label>
+                <select name="year" id="year">
+                    <option value="2022-23">2022-23</option>
+                </select>
+                <label for="age">YOUR AGE</label>
+                <input type="number" name="age" id="age">
+                <label for="return-field">RETURN FIELD EARLIER?</label>
+                <div class="qna">
+
+                    <label for="return-field-yes">YES</label>
+                    <input type="radio" name="return-field-yes" id="return-field-yes" value="YES" onclick="show(0)">
+                    <label for="return-field-no">NO</label>
+                    <input type="radio" name="return-field-no" id="return-field-no" value="NO" onclick="show(1)">
+                </div>
+                <div class="portal-id-password" id="show">
+
+                    <label for="portal">INCOME-TAX PORTAL USER ID</label>
+                    <input type="text"  name="portal-id" id="user-id" required >
+                    <label for="portal">INCOME-TAX PORTAL PASSWORD</label>
+                    <input type="text" name="portal-pw" id="password" >
+                </div>
+                <div id="last-year-itr" class="last-year-itr">
+                    <label for="upload-file">LAST YEAR ITR</label>
+                    <span>LAST YEAR COMPUTATION</span>
+                    <input type="file" name="computation" id="computation">
+                    <span>LAST YEAR ITR</span>
+                    <input type="file" name="last-year-itr" id="itr">
+                </div>
+             
+            </div>
+            <hr>
+            <div class="card card-2" data-step>
+                <h1>BANK DETAILS</h1>
+                <span>Bank A/C Number</span>
+                <input type="text" name="acnum" id="acnum">
+                <span>Bank IFSC Code</span>
+                <input type="text" name="ifsc" id="ifsc">
+                <span>Upload Your Bank Statement</span>
+                <input type="file" name="bank" id="bank-statement">
+         
+
+            </div>
+            <hr>
+            
+            <div class="card card-3" data-step>
+                <h1>                UPLOAD FORM-16
+                </h1>
+                <p>Income Tax Return Filing is easy with NGFINANCE and the smartest way to online file your taxes return is to just upload your form 16 and get your ITR prepared automatically.</p>
+                <img src="/images/upload-pdf.svg" alt="">
+                    <span>UPLOAD FORM-16</span>
+                  
+                        <input type="file" name="form16" id="form16">
+                    <h2>BUSINESS AND PROFESSION INCOME (NET PROFIT AFTER TAX)</h2>
+                    <label for="income">BUSINESS AND PROFESSION INCOME (NET PROFIT AFTER TAX)</label>
+                    <input type="number" name="income" id="income" placeholder="income after tax" accept="image/png, image/jpeg, image/pdf">
+            </div>
+            <hr>
+            <div class="card card-4">
+                <h2>CAPITAL GAIN</h2>
+                <div class="form-groups">
+
+                    <div class="form-group">
+                        
+                        <label for="sale-during-year">SALE DURING YEAR:</label>
+                        <input type="number" name="sale-during-year" id="sale" placeholder="SALE DURING YEAR">
+                    </div>
+                    <div class="form-group">
+                        <label for="mutual-fund">MUTUAL FUND SOLD:</label>
+                        <input type="number" name="mutual-fund" id="mutualfund" placeholder="MUTUAL FUND SOLD">
+                    </div>
+                    <div class="form-group">
+                        <label for="house-sold">
+                            HOUSE PROPERTY SOLD:
+                        </label>
+                        <input type="number" name="house-sold" id="housesold" placeholder="HOUSE PROPERTY SOLD">
+                    </div>
+                    <div class="form-group">
+                        <label for="land-sold">LAND SOLD:</label>
+                        <input type="number" name="land-sold" id="landsold" placeholder="LAND SOLD">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="card-5">
+                <h2>OTHER SOURCE INCOME</h2>
+                <div class="form-groups">
+                    <div class="form-group">
+                        <label for="fd">INTEREST ON FD:</label>
+                        <input type="number" name="fd" id="fd" placeholder="INT ON FD">
+                    </div>
+                    <div class="form-group">
+                        <label for="savings">INTEREST ON SAVINGS:</label>
+                        <input type="number" name="savings" id="savings" placeholder="INT ON SAVINGS">
+                    </div>
+                    <div class="form-group">
+                        <label for="other-income">OTHER INCOME:</label>
+                        <input type="number" name="other-income" id="other-income" placeholder="OTHER INCOME">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="card-6">
+                <h2>HOUSE PROPERTY</h2>
+                <div class="form-group">
+
+                    <label for="rental">HOUSE RENTAL INCOME:</label>
+                    <input type="number" name="rental" id="rental" placeholder="HOUSE RENTAL INCOME">
+                </div>
+            </div>
+            <hr>
+            <div class="card-7">
+                <h2>INVESTMENTS</h2>
+                <div class="form-groups">
+                    <div class="form-group">
+                        <label for="ppf">PPF:</label>
+                        <input type="number" name="ppf" id="ppf" placeholder="PPF">
+                    </div>
+                    <div class="form-group">
+                        <label for="NPS">NPS:</label>
+                        <input type="number" name="NPS" id="NPS" placeholder="NPS">
+                    </div>
+                    <div class="form-group">
+                        <label for="LIC">LIC:</label>
+                        <input type="number" name="LIC" id="LIC" placeholder="LIC">
+                    </div>
+                    <div class="form-group">
+                        <label for="donation">DONATION:</label>
+                        <input type="number" name="donation" id="donation" placeholder="DONATION">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" id="submit">SUBMIT</button>
+
+        </form>
+        <footer class="footer">
+            <div class="first">
+                <h2>About us</h2>
+                <p> NG-FINANCE was established by Mr.Nishith Shukla and Shivam Shukla with the vision of participating effectively in the process of providing financial security & protection to the clients as well as to facilitate wealth creation by providing effiecient ,cost effective and timely service. However today ‘NG-FINANCE’ is a one point solution to all your financial worries..</p>
+            </div>
+            <div class="second">
+                <h2>Contact Us</h2>
+                <p><i class="bi bi-geo-alt-fill" ></i>Vijaynagar ,Naranpura, Ahmedabad-380013</p>
+                
+                <p><i class="bi bi-envelope-fill"></i><a href="mailto:ngfinance212@gmail.com">ngfinance212@gmail.com</a></p>
+                
+                <p><i class="bi bi-telephone-fill"></i><a href="9773172110">+91-9773172110</a></p>
+                
+            </div>
+            <div class="third">
+                <h2>Our Location</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.9040910371614!2d72.55776041430421!3d23.06397752056846!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e837db30d6695%3A0x703bf076596f9c66!2zU2hyaSBWZXJhaSBNYXRhIE1hbmRpciwg4Kq24KuN4Kqw4KuAIOCqteCrh-CqsOCqvuCqiCDgqq7gqr7gqqTgqr7gqpzgq4Dgqqjgq4HgqoIg4Kqu4KqC4Kqm4Kq_4Kqw!5e0!3m2!1sen!2sin!4v1666265458167!5m2!1sen!2sin" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        </div>
+            </div>
+            <div class="fourth">
+                <h2>Follow Us :</h2>
+                <a href="https://www.facebook.com/people/NG-Financial-Services/100086988880946/" target="_blank">
+
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/ngfinance212/" target="_blank">
+
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+        </footer>
+         <section class="privacy-policy">
+      <div class="privacy-policy-container">
+        <p>© 2022 NG-FINANCE. All Rights Reserved.</p>
+        <span><a href="/privacy-policy.html">Privacy Policy</a></span>
+        <p>
+          Designed by
+          <a href="https://jaysathavara.github.io/" target="_blank"
+            >Jay Sathwara</a
+          >
+        </p>
+      </div>
+    </section>
+    <script>
+        const multiStepForm = document.querySelector('[data-multi-step]')
+        const formStep = [...multiStepForm.querySelectorAll('[data-step]')]
+        let currentStep = formStep.findIndex(step =>{
+            return step.classList.contains('active')
+        })
+        console.log(currentStep)
+        if(currentStep<0){
+            currentStep=0
+            showCurrentStep()
+        }
+        multiStepForm.addEventListener("click", e =>{
+            let incrementor
+            if(e.target.matches("[data-next]")){
+                incrementor =1
+            }else if(e.target.matches("[data-previous]")){
+                incrementor = -1
+            }
+            if(incrementor == null) return
+
+            const inputs = [...formStep[currentStep].querySelectorAll('input')]
+            const allValid = inputs.every(input => input.reportValidity())
+            if(allValid){
+                currentStep += incrementor
+                showCurrentStep()
+            }
+         })
+        //     formSteps.forEach(step => {
+        //             step.addEventListener("animationend", e => {
+        //             formSteps[currentStep].classList.remove("hide")
+        //             e.target.classList.toggle("hide", !e.target.classList.contains("active"))
+        // })
+        // })
+
+            function showCurrentStep() {
+            formSteps.forEach((step, index) => {
+                step.classList.toggle("active", index === currentStep)
+            })
+            }
+        
+    </script>
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>

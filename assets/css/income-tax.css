@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+:root{
+    --primary-color:rgb(44,114,205);
+    --secondary-color: rgb(229,229,229);
+    --primary-font:'Oswald', sans-serif;
+
+}
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    height: 100vh;
+    background-color: #E3F3F7;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.elementor{
+    background-color: rgb(34,54,69);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.elementor .contact-us  i{
+  margin: 0 20px;
+}
+.elementor .social-media i{
+    margin: 0 10px;
+}
+.elementor a{
+    color: var(--secondary-color);
+}
+.logo{
+    height: 100px;
+    width: 100px;
+    padding-bottom: 3px;
+    display: flex;
+    align-items:center ;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    align-items: center;
+    transition: all 0.6s;
+    width: 100%;
+    background-color:#fff;
+    position:sticky;
+    z-index: 1000;
+    top: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+.navbar .menu{
+    display:flex ;
+    align-items: baseline;
+    justify-content: center;
+
+}
+.navbar .menu li{
+    margin: 0 15px;
+    list-style: none;
+   
+}
+.navbar .menu li a{
+    text-decoration: none;
+   color: #0087ca;
+   border-radius: 3px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    /* background-color: var(--primary-color); */
+  
+    
+}
+.dropbtn{
+    border: 0;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--primary-font);
+    font-size: 20px;
+    color: #0087ca;
+    padding: 10px;
+    letter-spacing: 1px;
+    
+}
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+}
+.dropdown-content  a{
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #3F4E4F;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropbtn{
+    background-color: #108742;
+    color: #fff;
+    border-radius: 4px;
+}
+.navbar .menu li:hover a{
+    background-color: #108742;
+    color: #fff;
+  transition: all 0.6s;
+}
+.navbar .login button{
+    padding: 5px 40px;
+    font-family: var(--primary-font);
+    letter-spacing: 1px;
+    font-size: 16px;
+    background-color: var(--primary-color);
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+}
+.navbar .login button:hover{
+    background-color: #108742;
+    transition: all 0.6s;
+    transform: scale(1.1);
+}
+.whatsapp{
+    height: 100px;
+    width: 100px;
+    image-resolution: 100%;
+    position: fixed;
+    right: 0;
+    top: 80%;
+    z-index: 100000;
+  }
+/* MAIN */
+
+form{
+    padding: 50px;
+ 
+  
+    
+}
+form .card-1 h1{
+    letter-spacing: 1.1px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+form .card-1 p{
+ letter-spacing: 1px;
+ margin-bottom: 30px;
+ font-size: 1.1rem;
+ color: #3F4E4F;
+}
+form h1,p{
+    text-align: center;
+}
+form .card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   width: 100%;    
+    gap: 10px;
+ 
+   
+}
+
+form input{
+    /* display: block; */
+    padding: .5em;
+    outline: 0;
+}
+form .card-1 input, select{
+    width: 300px;
+    padding: .5em;
+
+}
+form label{
+    display: block;
+    color: rgb(90, 87, 87);
+    letter-spacing: 0.9px;
+    font-size: 1.1rem;
+
+}
+form .card-1 label{
+    margin: 10px 0;
+}
+
+form button{
+width: 200px;
+padding: .5em;
+text-align: center;
+margin: 10px auto;
+
+}
+form  button{
+    font-size: 1.1rem;
+    background-color: #0087ca;
+    color: #f1f1f1;
+    border: 0;
+    border-radius: 3px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.qna label, .qna input{
+ margin: 0;
+ padding: 0;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ row-gap: 10px;
+ justify-content: center;
+}
+.portal-id-password{
+    display: none;
+}
+.last-year-itr{
+    display: none;
+}
+.last-year-itr label{
+    font-weight: bold;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 20px 0;
+    letter-spacing: 1.1px;
+}
+.last-year-itr span{
+    color: #0087ca;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+.card-2 span{
+    font-weight: bold;
+    color: #3F4E4F;
+    font-size: 1.2rem;
+}
+.card-2 input{
+    margin-bottom: 10px ;
+}
+.card-2 h1{
+    margin: 20px 0;
+    color: #108742;
+    letter-spacing: 1.1px;
+}
+.card-2 #bank-statement{
+    margin-left: 60px;
+}
+form hr{
+    margin-top: 20px;
+}
+/* card-3 */
+form .card-3{
+    margin: 30px 0;
+}
+form .card-3 h1{
+    border-bottom: 1px solid black;
+    color: #003865;
+    letter-spacing: 1.1px;
+}
+.card-3 p{
+    font-weight: 500;
+    font-size: 1.1rem;
+    letter-spacing: 1.1px;
+}
+.card-3 img{
+    margin: 30px 0;
+    height: 200px;
+}
+.card-3 input{
+    font-size: 1.1rem;
+    margin-left: 50px;
+}
+.card-3 span{
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 1.1px;
+}
+.card-3 H2{
+    color: #003865;
+    letter-spacing: 1.2px;
+    border-bottom: 1px solid black;
+    margin: 30px 0;
+}
+.card-3 #income{
+    outline: 0;
+    border: 1px solid black;
+    border-radius: 2px;
+    width: 500px;
+}
+form .card-4{
+    margin: 40px 0;
+}
+form .card-4 h2{
+    font-size: 1.6rem;
+    letter-spacing: 1.2px;
+    border-bottom: 1px solid black;
+    color: #003865;
+
+}
+form .form-groups {
+    display: grid;
+
+    margin: 30px 0;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+   
+
+}
+form .form-groups label{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    text-align: start;
+    font-weight: bold;
+    color: #003865;
+}
+form .form-groups input{
+    width: 400px;
+    padding: 10px;
+    
+}
+/* CARD-5 */
+form .card-5{
+    margin: 40px 0;
+}
+form .card-5 h2{
+    border-bottom: 1px solid black;
+    width: 250px;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color:#003865;
+}
+form .card-5 .form-groups{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+        
+}
+/* card-6 */
+form .card-6 h2{
+    text-align: center;
+    color: #003865;
+    border-bottom: 1px solid black;
+    width: 200px;
+    margin: 40px auto;
+    letter-spacing: 1.2px;
+    font-size: 1.6rem;
+}
+form .card-6 input{
+ width: 400px;
+ padding: 10px;
+ margin-bottom: 40px;
+
+}
+form .card-6 label{
+    font-weight: bold;
+    color: #003865;
+    margin-bottom: 10px;
+}
+form .card-6 .form-group{
+    display: grid;
+    justify-content: center;    
+}
+/* card-7 */
+form .card-7 h2{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    width: 170px;
+    color: #003865;
+    font-size: 1.6rem;
+    letter-spacing: 1.3px;
+    margin: 40px auto;
+}
+form .card-7 input{
+    width: 400px;
+    padding: 10px;
+}
+
+
+form .card-7 .form-groups{
+    display: grid;
+    justify-content: center;
+    align-items:center;
+    grid-template-columns: 1fr 1fr;
+   margin-left: 100px;
+   margin-top: 5rem ;
+   column-gap: 80px;
+  
+  
+}
+form button{
+    cursor: pointer;
+}
+
+/* footer */
+.footer{
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    padding: 40px;
+    margin: auto;
+}
+.footer h2{
+    padding-bottom: 30px;
+    font-size: 1.8rem;
+    color: #f1f1f1;
+    font-weight: 500;
+}
+.footer p{
+    width: 80%;
+    letter-spacing: 1.2px;
+    line-height: 1.6;
+    color: #f1f1f1;
+    word-spacing: 1.2px;
+    
+}
+.footer .first{
+    border-bottom: 2px solid #f1f1f1;
+}
+.footer .first p{
+    text-align: justify;
+}
+.footer i{
+    padding-right: 5px;
+}
+.footer .second a{
+    text-decoration: none;
+    color: #f1f1f1;
+   
+}
+.footer .second p{
+    /* width: 100%;
+    text-align: justify; */
+}
+.footer .third{
+    padding-left: 60px;
+}
+.footer .second p{
+    margin: 10px 0;
+}
+
+.footer .fourth{
+    margin-top: 30px;
+    display: flex;
+    align-items: baseline;
+    column-gap: 10px;
+}
+
+.footer .fourth i{
+    display: inline;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #000;
+    /* margin: 0 5px; */
+} 
+.footer .fourth i:hover{
+    background-color:#108742;
+}
+
+.privacy-policy{
+    text-decoration: none;
+    color: #f1f1f1;
+    background-color: rgb(34,54,69);
+    font-size: 0.8rem;
+    padding: 10px ;
+    border-bottom: 1px solid #f1f1f1;         
+
+}
+.privacy-policy .privacy-policy-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    color: #f1f1f1;
+    row-gap: 10px;
+}
+.privacy-policy .privacy-policy-container p a, span a{
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 0.9rem;
+
+    border-bottom: 1px solid #f1f1f1;       
+}
